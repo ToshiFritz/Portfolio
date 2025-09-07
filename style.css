@@ -29,6 +29,7 @@ body{
     padding: 0 20px;
 }
 
+/*header -section*/
 #header {
     background-color: #1a3c6b;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -169,7 +170,8 @@ h2 {
 
 .about-text p {
     margin-bottom: 1.5rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    font-weight: 400;
     line-height: 1.8;
 }
 
@@ -191,11 +193,130 @@ h2 {
     border: 4px solid #294871;
 }
 
+/* Projects Section */
+
+
+/* Skills Section */
+.skills {
+    background-color: #f8f9fa;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.skill-category {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category li {
+    padding: 0.75rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.skill-category li:last-child {
+    border-bottom: none;
+}
+
+/* Skills Legend */
+.skills-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Skill Indicators */
+.skill-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+/* Proficiency Levels */
+.skill-indicator.beginner {
+    background-color: #dc3545; /* Red */
+}
+
+.skill-indicator.intermediate {
+    background-color: #ffc107; /* Yellow */
+}
+
+.skill-indicator.experienced {
+    background-color: #fd7e14; /* Orange */
+}
+
+.skill-indicator.expert {
+    background-color: #28a745; /* Green */
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 3rem 0 1rem;
+}
+
+.footer h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
 .social-links {
     display: flex;
     font-size: 20px;
     font-weight: 500;
-    justify-content: left;
+    justify-content: center;
     gap: 1.5rem;
     margin-top: 1rem;
 }
@@ -205,4 +326,12 @@ h2 {
     color: inherit;
 }
 
-/* Projects Section */
+.social-links a:hover {
+    color: #1da0c8;
+}
+
+.footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
