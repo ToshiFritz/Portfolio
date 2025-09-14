@@ -403,3 +403,53 @@ h2 {
     padding-top: 1rem;
     margin-top: 2rem;
 }
+
+/* Dark mode styles */
+body.dark-mode {
+    background: #181c24;
+    color: #e0e6ef;
+}
+
+body.dark-mode #header {
+    background-color: #121826;
+}
+
+body.dark-mode .about,
+body.dark-mode .skills {
+    background-color: #232b3a;
+}
+
+body.dark-mode .project-card,
+body.dark-mode .skills-legend,
+body.dark-mode .skill-category {
+    background-color: #232b3a;
+    color: #e0e6ef;
+}
+
+body.dark-mode .footer {
+    background-color: #181c24;
+    color: #e0e6ef;
+}
+
+body.dark-mode .project-link {
+    background-color: #294871;
+}
+
+body.dark-mode .project-link:hover {
+    background-color: #1da0c8;
+}
+
+body.dark-mode .cta-button {
+    border-color: #1da0c8;
+    color: #1da0c8;
+}
+
+body.dark-mode .cta-button:hover {
+    background: #1da0c8;
+    color: #181c24;
+}
+
+
+body.dark-mode .projects {
+    background-color: #181c24;
+}
