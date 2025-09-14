@@ -478,3 +478,46 @@ body.dark-mode .cta-button:hover {
 body.dark-mode .projects {
     background-color: #181c24;
 }
+
+/* editable about section */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.edit-btn {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.edit-btn:hover {
+    background: #2a9fc5;
+}
+
+.editable-content {
+    transition: background-color 0.3s;
+}
+
+.editable-content.editing {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border: 2px dashed var(--accent-color);
+    border-radius: 4px;
+    outline: none;
+    color: #333;
+}
+
+body.dark-mode .editable-content.editing {
+    background: rgba(40, 40, 40, 0.9);
+    color: #eee;
+}
